@@ -2,58 +2,52 @@
 <head>
   <title>Grade Calculator</title>
   <link rel="stylesheet" href="./stylesheets/calculator.css">
+  <script src="calculator.js" defer></script>
 </head>
 <body>
-  <div class="box-1">
-    <div class="box-2">
-      <div class="box-3">
-        <main id="main">
-          <div class="heading-1">
+  <div id="container-1">
+    <div id="container-2">
+      <div id="container-3">
+        <section id="container-4">
+          <header class="heading-1">
             <h1>Grade Calculator</h1>
-          </div>
-          <div class="box-4">
-            <div class="heading-2">
-              <h2>Activities</h2>
-            </div>
-            <div>
+          </header>
+          <section id="container-5">
+            <header class="heading-2">
+              <h3>Activities</h3>
+            </header>
+            <div class="heading-3">
               <p>Give grades to the numeric activities:</p>
             </div>
-            <table id="table">
-              <thead>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Short Name</th>
-                  <th scope="col">Weight</th scope="col">
-                  <th scope="col">Grade</th>
-                  <th scope="col">Percent</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Activity 1</td>
-                  <td>A1</td>
-                  <td>...</td>
-                  <td>.../...</td>
-                  <td>...</td>
-                </tr>
-                <tr>
-                  <td>Activity 2</td>
-                  <td>A2</td>
-                  <td>...</td>
-                  <td>.../...</td>
-                  <td>...</td>
-                </tr>
-                <tr>
-                  <td>Activity 3</td>
-                  <td>A3</td>
-                  <td>...</td>
-                  <td>.../...</td>
-                  <td>...</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </main>
+            <form id="form-container">
+              <main id="form-activities-container">
+                <div id="form-name">
+                  <div class="form-heading"><strong>Name</strong></div>
+                </div>
+                <div id="form-short-name">
+                  <div class="form-heading"><strong>Short Name</strong></div>
+                </div>
+                <div id="form-weight">
+                  <div class="form-heading"><strong>Weight</strong></div>
+                </div>
+                <div id="form-grade">
+                  <div class="form-heading"><strong>Grade</strong></div>
+                </div>
+                <div id="form-percent">
+                  <div class="form-heading"><strong>Percent</strong></div>
+                </div>
+              </main>
+              <button id="btn-add-activity" type="button">ADD ACTIVITY</button>
+              <section class="result-container">
+                <h3>Result <span id="result"></span></h3>
+              </section>
+              <div class="btn-container">
+                <button id="btn-weighted" type="button">WEIGHTED</button>
+                <button id="btn-mean" type="button">MEAN</button>
+              </div>
+            </form>
+          </section>
+        </section>
       </div>
     </div>
   </div>
